@@ -1,0 +1,113 @@
+.specialization-section {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.specialization-header {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 70px;
+
+  .tag {
+    color: #ff5a3c;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 42px;
+    margin: 15px 0 25px;
+    color: #111;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+  }
+}
+
+/* GRID */
+.specialization-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.specialization-card {
+  background: #f9fafb;
+  padding: 45px 30px;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  cursor: default;
+
+  .icon {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    background: rgba(255, 90, 60, 0.12);
+    color: #ff5a3c;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    transition: 0.35s ease;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+
+    .icon {
+      background: #ff5a3c;
+      color: #fff;
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+  .specialization-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specialization-header h2 {
+    font-size: 34px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .specialization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialization-header h2 {
+    font-size: 28px;
+  }
+
+  .specialization-card {
+    padding: 35px 22px;
+  }
+}

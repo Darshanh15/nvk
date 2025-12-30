@@ -1,0 +1,106 @@
+.services-section {
+  padding: 100px 20px;
+  background: #f9fafb;
+}
+
+.services-header {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 60px;
+
+  .tag {
+    color: #ff5a3c;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 42px;
+    margin: 15px 0;
+    color: #111;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+}
+
+/* GRID */
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.35s ease;
+  cursor: pointer;
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    background: rgba(255, 90, 60, 0.1);
+    color: #ff5a3c;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    transition: 0.35s;
+  }
+
+  h3 {
+    font-size: 17px;
+    color: #222;
+    line-height: 1.4;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+
+    .icon {
+      background: #ff5a3c;
+      color: #fff;
+      transform: rotate(8deg) scale(1.1);
+    }
+  }
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-header h2 {
+    font-size: 34px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h2 {
+    font-size: 28px;
+  }
+
+  .service-card {
+    padding: 35px 20px;
+  }
+}
