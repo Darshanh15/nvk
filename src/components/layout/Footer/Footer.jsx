@@ -24,7 +24,7 @@ function Footer() {
         {/* Logo + Description */}
         <div className="footer-section about">
           <div className="footer-logo">
-            <Link to="/">
+            <Link to="/nvk">
               <img src={logo} alt="Logo" />
             </Link>
           </div>
@@ -64,7 +64,7 @@ function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/nvk">Home</Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
