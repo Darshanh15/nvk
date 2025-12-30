@@ -78,7 +78,7 @@ function Navbar() {
   };
 
   const menuItems = [
-    { name: "Home", icon: <FaHome />, path: "/nvk" },
+    { name: "Home", icon: <FaHome />, path: "/" },
     { name: "About us", path: "/about" },
     // { name: "About us", path: "/about" },
     // { name: "Services", path: "/services" },
@@ -155,7 +155,7 @@ return (
   <>
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/nvk" onClick={closeAllMenus}>
+        <Link to="/" onClick={closeAllMenus}>
           <img src={logo} alt="Logo" />
         </Link>
       </div>
