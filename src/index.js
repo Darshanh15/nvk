@@ -30,7 +30,7 @@ root.render(
   //   <App />
   // </React.StrictMode>
 
-  <BrowserRouter>
+  <BrowserRouter basename="/nvk">
     <App />
   </BrowserRouter>
 );
