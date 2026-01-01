@@ -9,6 +9,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaYoutube,
+  FaWhatsapp,
   
 } from "react-icons/fa";
 import "./footer.scss";
@@ -53,8 +54,11 @@ function Footer() {
             >
               <FaEnvelope />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <FaYoutube />
+            </a> */}
+            <a href="#">
+              <FaWhatsapp />
             </a>
           </div>
         </div>
