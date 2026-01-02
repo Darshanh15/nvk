@@ -31,7 +31,14 @@ const WhoWeAre = () => {
             ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt
           </p>
 
-          <button className="read-more">READ MORE</button>
+          {/* <button className="read-more">READ MORE</button> */}
+          <a
+  href="/pdf/brochure.pdf"
+  download="Brochure.pdf"
+  className="download-link"
+>
+  Download Brochure
+</a>
         </div>
       </div>
     </section>

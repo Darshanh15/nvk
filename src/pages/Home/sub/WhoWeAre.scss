@@ -48,8 +48,8 @@
     max-width: 520px;
   }
 
-  .read-more {
-    margin-top: 20px;
+  .download-link {
+    margin-top: 60px;
     background: #ff5a3c;
     color: #fff;
     border: none;
@@ -58,11 +58,27 @@
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
   }
 
-  .read-more:hover {
+  .download-link:hover {
     background: #93b92f;
   }
+//   .read-more {
+//     margin-top: 20px;
+//     background: #ff5a3c;
+//     color: #fff;
+//     border: none;
+//     padding: 14px 34px;
+//     border-radius: 30px;
+//     font-weight: 600;
+//     cursor: pointer;
+//     transition: 0.3s;
+//   }
+
+//   .read-more:hover {
+//     background: #93b92f;
+//   }
 }
 
 /* 📱 TABLET */

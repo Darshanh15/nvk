@@ -46,7 +46,7 @@ const Reservation = () => {
 
         {/* RIGHT FORM */}
         <div className="reservation-form">
-          <h3>Table Reservation</h3>
+          <h3>Contact Us</h3>
 
           <form>
             <div className="form-grid">
@@ -56,13 +56,13 @@ const Reservation = () => {
               <input type="tel" placeholder="Phone Number*" required />
               <input type="number" placeholder="Number Of Guests" />
 
-              <input type="date" />
-              <input type="time" />
+              {/* <input type="date" /> */}
+              {/* <input type="time" /> */}
             </div>
 
             <textarea placeholder="Message"></textarea>
 
-            <button type="submit">Make A Reservation</button>
+            <button type="submit">Enqury Submit</button>
           </form>
         </div>
       </div>

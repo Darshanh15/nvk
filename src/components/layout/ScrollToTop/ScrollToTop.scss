@@ -1,0 +1,48 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;  // 24px from bottom
+  right: 1.5rem;   // 24px from right
+  background-color: #ff593cd7; // green
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+
+  &:hover {
+    background-color: #ff5a3c; // darker green
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  svg {
+    pointer-events: none; // icon not blocking click
+  }
+}
+
+/* Make sure it scales well on smaller screens */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 2rem;
+    right: 1rem;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 2rem;
+    right: 0.8rem;
+    padding: 10px;
+    font-size: 18px; // even smaller for very small devices
+  }
+}

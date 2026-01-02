@@ -10,13 +10,37 @@ import {
   FaMapMarkerAlt,
   FaYoutube,
   FaWhatsapp,
-  
 } from "react-icons/fa";
 import "./footer.scss";
 
 import logo from "../../../assets/logo.png";
 // import cpmy from "../../data/cmy";
 import cmpy from "../../../data/cmpy";
+
+// const data = {
+//   socialicons : [
+//     whatappnum : "919532543787",
+//     facebook : "https://www.facebook.com/share/1Add8KBYdn/",
+//     instagram : "https://www.instagram.com/gowdru_darshuu?igsh=ZWZyNDZzOTFpdGZh",
+//     mailid : "darshanhgowda5@gmail.com"
+//     mailsubject : "Welcome%20to%20NVK%20Construction&body=Hello%20NVK%20Team,%0A%0AI%20am%20interested%20in%20your%20construction%20services.",
+//     youtube : "https://www.youtube.com/@soundsofsadhana"
+//   ]
+// }
+
+import { data } from "./data"; // adjust path if needed
+
+const {
+  facebook,
+  instagram,
+  mailId,
+  mailSubject,
+  mailBody,
+  whatsappNumber,
+  youtube,
+} = data.socialIcons;
+
+const { contactUs } = data;
 
 function Footer() {
   return (
@@ -30,41 +54,97 @@ function Footer() {
             </Link>
           </div>
           <p>We convert visions into celebrations - every time..</p>
-          <div className="social-icons">
-            <a href="#">
+
+          
+          {/* <div className="social-icons">
+            <a
+              href="https://www.facebook.com/share/1Add8KBYdn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a 
-  href=""
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaInstagram />
-</a>
-            {/* <a href="jmtechsolution2024@gmail.com"><FaEnvelope /></a> */}
 
-            {/* it will be take only mail id */}
-            {/* <a href="mailto:jmtechsolution2024@gmail.com?subject=Project Inquiry&body=Hello, I am interested in your services."><FaEnvelope /></a> */}
-
-            {/* it will be take only mail id and subject and body also*/}
             <a
-              href="."
+              href="https://www.instagram.com/gowdru_darshuu?igsh=ZWZyNDZzOTFpdGZh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=darshanhgowda5@gmail.com&subject=Welcome%20to%20NVK%20Construction&body=Hello%20NVK%20Team,%0A%0AI%20am%20interested%20in%20your%20construction%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+            >
+              <FaEnvelope />
+            </a>
+
+            <a
+              href="https://wa.me/919731543787?text=Hello%20NVK%20Construction%20%26%20Consultancy,%20I%20am%20interested%20in%20your%20services.%20Please%20guide%20me."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp />
+            </a>
+
+            <a
+              href="https://www.youtube.com/@soundsofsadhana"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </a>
+          </div> */}
+
+          <div className="social-icons">
+            {/* Facebook */}
+            <a href={facebook} target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
+
+            {/* Instagram */}
+            <a href={instagram} target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+
+            {/* Email (Gmail – most reliable) */}
+            <a
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${mailId}&subject=${encodeURIComponent(
+                mailSubject
+              )}&body=${encodeURIComponent(mailBody)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaEnvelope />
             </a>
-            {/* <a href="#">
-              <FaYoutube />
-            </a> */}
-            <a href="#">
+
+            {/* WhatsApp */}
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                "Hello NVK Construction & Consultancy, I am interested in your services."
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp />
+            </a>
+
+            {/* YouTube */}
+            <a href={youtube} target="_blank" rel="noopener noreferrer">
+              <FaYoutube />
             </a>
           </div>
         </div>
 
         {/* Quick Links */}
-        <div className="footer-section links">
+        <div className="footer-section footer-links">
           <h3>Quick Links</h3>
           <ul>
             <li>
@@ -86,30 +166,38 @@ function Footer() {
         </div>
 
         {/* Services */}
-        <div className="footer-section services">
+        <div className="footer-section footer-services">
           <h3>Our Services</h3>
           <ul>
             <li>
               <Link to="/ServicesPage">Support Services</Link>
             </li>
-            {/* <li><Link to="/production">Production</Link></li>
-            <li><Link to="/management">Management</Link></li>
-            <li><Link to="/promotion">Promotion</Link></li> */}
           </ul>
         </div>
 
         {/* Contact Info */}
-        <div className="footer-section ">
+        <div className="footer-section footer-contact">
           <h3>Contact Us</h3>
-          <p>
-            <FaMapMarkerAlt /> {cmpy.address}
-          </p>
-          <p>
-            <FaPhoneAlt /> {cmpy.mobile}
-          </p>
-          <p>
-            <FaEnvelope /> {cmpy.mail}
-          </p>
+
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              contactUs.address
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaMapMarkerAlt /> {contactUs.address}
+          </a>
+
+          <a href={`tel:${contactUs.phoneNumbers[0].replace(/\s+/g, "")}`}>
+            <FaPhoneAlt /> {contactUs.phoneNumbers.join(" / ")}
+          </a>
+
+          <a href={`mailto:${contactUs.emailId}`}>
+            <FaEnvelope /> {contactUs.emailId}
+          </a>
+
+          
         </div>
       </div>
 

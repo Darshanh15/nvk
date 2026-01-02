@@ -10,11 +10,15 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Services from './pages/Services/Services';
 import Gallery from './pages/Gallery/Gallery';
+import ScrollautoUp from './components/layout/ScrollToTop/ScrollautoUp';
+import ScrollToTop from './components/layout/ScrollToTop/ScrollToTop';
+import WhatsAppButton from './components/layout/WhatsAppButton/WhatsAppButton';
 
 function App() {
   return (
     <>
     <Navbar />
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -22,6 +26,8 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Services" element={<Services />} />
       </Routes>
+      <WhatsAppButton />
+      <ScrollautoUp />
       <Footer />
     </>
   );

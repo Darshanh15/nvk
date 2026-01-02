@@ -1,0 +1,48 @@
+.whatsapp-fab {
+  position: fixed;
+  bottom: 5rem;
+  right: 1.5rem;
+  background-color: #25D366; // WhatsApp green
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 5%; // round shape looks better
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #20b358;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    pointer-events: none;
+  }
+}
+
+// 📱 Mobile Responsive
+@media (max-width: 768px) {
+  .whatsapp-fab {
+    bottom: 5rem;   // bring it a little up
+    right: 1rem;    // closer to edge
+    padding: 10px;  // smaller padding
+    font-size: 18px; // smaller icon size
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-fab {
+    bottom: 5rem;
+    right: 0.8rem;
+    padding: 10px;
+    font-size: 18px; // even smaller for very small devices
+  }
+}
