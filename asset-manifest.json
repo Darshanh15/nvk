@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nvk/static/css/main.827d4dbc.css",
-    "main.js": "/nvk/static/js/main.7f4efcbe.js",
+    "main.css": "/nvk/static/css/main.cc0b7401.css",
+    "main.js": "/nvk/static/js/main.22ee7a20.js",
     "static/js/453.f7cd8012.chunk.js": "/nvk/static/js/453.f7cd8012.chunk.js",
     "static/media/calculator-image.png": "/nvk/static/media/calculator-image.4c5a895f179dc77c93bd.png",
     "static/media/constraction3.jpeg": "/nvk/static/media/constraction3.e4695ff22f2f1417f671.jpeg",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/nvk/static/media/logo.7b35c3f5e4beebadef92.png",
     "static/media/logo.svg": "/nvk/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/nvk/index.html",
-    "main.827d4dbc.css.map": "/nvk/static/css/main.827d4dbc.css.map",
-    "main.7f4efcbe.js.map": "/nvk/static/js/main.7f4efcbe.js.map",
+    "main.cc0b7401.css.map": "/nvk/static/css/main.cc0b7401.css.map",
+    "main.22ee7a20.js.map": "/nvk/static/js/main.22ee7a20.js.map",
     "453.f7cd8012.chunk.js.map": "/nvk/static/js/453.f7cd8012.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.827d4dbc.css",
-    "static/js/main.7f4efcbe.js"
+    "static/css/main.cc0b7401.css",
+    "static/js/main.22ee7a20.js"
   ]
 }
